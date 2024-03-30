@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;  
+}
+
+body {
+    background: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 20vh;
+    height: 80vh;
+}
+
+h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 38px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.texto-fora {
+    display: inline-flex;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 38px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 26px;
+
+}
+
+input {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius:  14px;
+    height: 74px;
+    width: 342px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+#input-min {
+margin-right: 62px;
+}
+
+button {
+    background: #FFD700;
+    box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35);
+    border-radius: 10px;
+    width: 342px;
+    height: 72px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity:  0.9;
+}
+button:active {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    color: #000000;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 100px 50px;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    border-top-left-radius: 180px;
+}
+
+.social-media {
+margin-bottom: 20px;
+}
+
+.social-media i{
+font-size: 28px;
+border: 2px solid;
+padding: 10px;
+border-radius: 50%;
+
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.links a{
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 27px;
+}
+
+.copyright {
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.line {
+    justify-content: center;
+    background-color: #0033ff;
+    width: 20px;
+    height: 6px;
+    margin-top: 2px;
+    border-radius: 40px;
+    position: relative;
+   animation: underline-animation 3s linear infinite;
+}
+@keyframes underline-animation{
+    0%{
+        left: -231px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        left: 229px;
+        opacity: 0;
+    }
+}
